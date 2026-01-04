@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azer Yusifzade - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="color: red;">AZER.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#about" data-lang="nav_about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-lang="nav_projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#path" data-lang="nav_path">My Path</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-lang="nav_contact">Contact</a></li>
+                    
+                    <li class="nav-item dropdown ms-lg-3">
+                        <a class="nav-link dropdown-toggle btn-glass" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-globe"></i> <span id="currentLang">EN</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" onclick="setLanguage('en')">English</button></li>
+                            <li><button class="dropdown-item" onclick="setLanguage('az')">Azərbaycan</button></li>
+                            <li><button class="dropdown-item" onclick="setLanguage('ru')">Русский</button></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-theme-toggle" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h4 data-lang="hero_greeting" class="animate-up fw-bold text-accent">Hello, I'm</h4>
+                    <h1 class="display-1 fw-extra-bold my-2 animate-up delay-1 gradient-text">Azer Yusifzade</h1>
+                    <h2 class="h3 mb-4 animate-up delay-2" data-lang="hero_title">Creative Developer</h2>
+                    <p class="lead mb-5 animate-up delay-3 opacity-75" data-lang="hero_desc">Building digital experiences with passion and precision.</p>
+                    <div class="animate-up delay-4">
+                        <a href="#projects" class="btn btn-custom-primary btn-lg me-3 shadow-lg" data-lang="btn_projects">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-custom btn-lg" data-lang="btn_contact">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-visual floating-anim">
+                        <i class="fas fa-code fa-10x text-gradient-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-5 mb-md-0 position-relative">
+                    <div class="about-img-wrapper">
+                        <img src="img/logo1.png" class="img-fluid-rounded-4-shadow-lg">
+                        
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-accent fw-bold text-uppercase ls-2">Who Am I?</h6>
+                    <h2 class="fw-bold mb-4 display-5" data-lang="about_title">About Me</h2>
+                    <p class="lead text-muted" data-lang="about_text"></p>
+                    
+                    <div class="tech-stack mt-5">
+                        <div class="tech-item" title="HTML5"><i class="fab fa-html5"></i></div>
+                        <div class="tech-item" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-item" title="JavaScript"><i class="fab fa-js"></i></div>
+                        <div class="tech-item" title="Bootstrap"><i class="fab fa-bootstrap"></i></div>
+                        <div class="tech-item" title="Mongo DB"><i class="devicon-mongodb-plain"></i></div>
+                        <div class="tech-item" title="SQLite"><i class="devicon-sqlite-plain"></i></div>
+                        <div class="tech-item" title="Python"><i class="devicon-python-plain"></i></div>
+                        <div class="tech-item" title="Node.js"><i class="devicon-nodejs-plain"></i></div>
+                        <div class="tech-item" title="Linux"><i class="devicon-linux-plain"></i></div>
+                        <div class="tech-item" title="C Language"><i class="devicon-c-plain"></i></div>
+                        <div class="tech-item" title="Bash/Shell"><i class="devicon-bash-plain"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="path" class="section-padding bg-alt">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-accent fw-bold text-uppercase ls-2">My Journey</h6>
+            <h2 class="fw-bold display-5" data-lang="path_title">My Path</h2>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="main-line"></div>
+
+            <div class="timeline-block block-left">
+                <div class="marker"></div>
+                <div class="timeline-card animate-on-scroll">
+                    <span class="date-bubble" data-lang="path_1_date">2020 - 2021</span>
+                    <h4 class="fw-bold" data-lang="path_1_title">The Beginning</h4>
+                    <p class="text-muted mb-0" data-lang="path_1_desc">Dived into the world of web development with HTML, CSS, and Linux basics.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block block-right">
+                <div class="marker"></div>
+                <div class="timeline-card animate-on-scroll">
+                    <span class="date-bubble" data-lang="path_2_date">2021 - 2022</span>
+                    <h4 class="fw-bold" data-lang="path_2_title">Logic & Systems</h4>
+                    <p class="text-muted mb-0" data-lang="path_2_desc">Mastered C and Python. Started exploring the power of the Bash command line.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block block-left">
+                <div class="marker"></div>
+                <div class="timeline-card animate-on-scroll">
+                    <span class="date-bubble" data-lang="path_3_date">2022 - 2023</span>
+                    <h4 class="fw-bold" data-lang="path_3_title">Frontend Mastery</h4>
+                    <p class="text-muted mb-0" data-lang="path_3_desc">Built complex UIs using JavaScript and Bootstrap 5 for various local projects.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block block-right">
+                <div class="marker"></div>
+                <div class="timeline-card animate-on-scroll">
+                    <span class="date-bubble" data-lang="path_4_date">2023 - 2024</span>
+                    <h4 class="fw-bold" data-lang="path_4_title">Fullstack Exploration</h4>
+                    <p class="text-muted mb-0" data-lang="path_4_desc">Adopted Node.js for backend services and automated workflows on Linux servers.</p>
+                </div>
+            </div>
+
+            <div class="timeline-block block-left">
+                <div class="marker"></div>
+                <div class="timeline-card animate-on-scroll">
+                    <span class="date-bubble" data-lang="path_5_date">2025 - Present</span>
+                    <h4 class="fw-bold" data-lang="path_5_title">Professional Developer</h4>
+                    <p class="text-muted mb-0" data-lang="path_5_desc">Freelancing globally and building scalable web applications for diverse clients.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-accent fw-bold text-uppercase ls-2">Portfolio</h6>
+                <h2 class="fw-bold display-5" data-lang="proj_title">Projects</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="project-img">
+                            <img src="">
+                            <div class="overlay">
+                                <a href="#" class="btn btn-light rounded-circle"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold-p">CYBER AZ</h5>
+                            <p class="text-muted small">CyberSecurity, Apps</p>
+                            <a href="https://cyberaz.vercel.app" class="btn-link-custom" data-lang="proj_card_btn">View Code <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="project-img">
+                            <img src="">
+                            <div class="overlay">
+                                <a href="#" class="btn btn-light rounded-circle"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold-p">Weather App</h5>
+                            <p class="text-muted small">Fetch API, Async/Await</p>
+                            <a href="#" class="btn-link-custom" data-lang="proj_card_btn">View Code <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="project-img">
+                            <img src="">
+                            <div class="overlay">
+                                <a href="#" class="btn btn-light rounded-circle"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold-p">Task Manager</h5>
+                            <p class="text-muted small">LocalStorage, DOM Manipulation</p>
+                            <a href="#" class="btn-link-custom" data-lang="proj_card_btn">View Code <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-alt">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card card-glass p-5 border-0 shadow-lg text-center contact-card">
+                    <div class="contact-icon mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2 class="fw-bold mb-3" data-lang="contact_title">Get In Touch</h2>
+                    
+                    <div class="email-box mb-4">
+                        <code class="fs-5 text-accent">gmail.com</code>
+                    </div>
+
+                    <a href="mailto:yusifzadeazer2332@gmail.com" class="btn btn-custom-primary btn-lg px-5 shadow">
+                        <i class="fas fa-envelope me-2"></i> <span data-lang="contact_send">Send Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container py-5 text-center">
+            <h2 class="fw-bold mb-3">AZER.</h2>
+            <div class="social-icons mb-4">
+                <a href="https://github.com/azeryusifzade"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="text-muted small" data-lang="footer_text">© 2025 Azer Yusifzade. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
